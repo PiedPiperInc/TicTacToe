@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = "is.ru.tictactoe.TicTacToe"
+
+repositories {
+    jcenter()
+}
+
+jar {
+     manifest {
+	     attributes("Main-Class": "is.ru.tictactoe.TicTacToe")
+	     }
+    }
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.5'
+
+    testCompile 'junit:junit:4.11'
+
+}
