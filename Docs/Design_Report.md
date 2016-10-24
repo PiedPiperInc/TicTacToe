@@ -6,17 +6,17 @@ Verkefnið gengur út á að búa til Tic Tac Toe leik í java. Verkefnið snýs
 
 #Klasar
 ##TicTacToe
-*void play()
-*char getInput()
-*void displayBoard(char[][] board)
+* void play()
+* char getInput()
+* void displayBoard(char[][] board)
 ##Game
-*Char[][] board
-*Char player
-*Boolean draw
-*Void turn(char input)
-*Char[][] getBoard()
-*Char getPlayer()
-*Boolean checkifInputIsValid()
-*Boolean gameover(char[][] board)
+* Char[][] board
+* Char player
+* Boolean draw
+* Void turn(char input)
+* Char[][] getBoard()
+* Char getPlayer()
+* Boolean checkifInputIsValid()
+* Boolean gameover(char[][] board)
 
 #Lagskipting
