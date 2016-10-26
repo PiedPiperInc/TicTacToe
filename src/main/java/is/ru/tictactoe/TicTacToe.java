@@ -9,10 +9,6 @@ public class TicTacToe {
 	}
 
 	private char getInput() {
-		char input = StdIn.read();
-		if(checkIfInputIsValid(input)){
-		   return input;
-		}
 	}
 
 	private void displayBoard(char[][] board) {
