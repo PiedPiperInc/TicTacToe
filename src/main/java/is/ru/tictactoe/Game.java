@@ -45,6 +45,8 @@ public class Game {
 		}
 
 		public boolean checkIfInputIsValid(char input) {
+			if(input > 48 && input < 58)
+				return true;
 			return false;
 		}
 

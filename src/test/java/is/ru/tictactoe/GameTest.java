@@ -16,4 +16,9 @@ public class GameTest {
 			}
 		}
 	}
+	@Test
+	public void TestInput(){
+		Game theGame = new Game();
+		assertEquals(true, theGame.checkIfInputIsValid('3'));
+	}
 }
