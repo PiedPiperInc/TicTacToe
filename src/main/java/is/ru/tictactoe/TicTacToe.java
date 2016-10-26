@@ -5,6 +5,11 @@ import edu.princeton.cs.algs4.*;
 public class TicTacToe {
 
         public void play() {
+                //initialize a new Game. This fills the board with numbers 1-9
+                Game game = new Game();
+
+                //display the board with the board from the game class
+                displayBoard(game.getBoard());
 
         }
 
@@ -12,27 +17,32 @@ public class TicTacToe {
                 return '0';
         }
 
-        public void displayBoard() {
-                char[][] board = new char[3][3];
-                for(int i = 0; i < 3; i++){
-                        for(int j = 0; j < 3; j++){
-                                if(i % 2 == 0 && j % 2 == 1)
-                                        board[i][j] = 'X';
-                                else
-                                        board[i][j] = 'O';
-
-                                StdOut.printf(board[i][j] + " ");
+        public void displayBoard(char[][] board) {
+                /*board should look like this on the console
+                         _____________
+                         | 1 | 2 | 3 |
+                         _____________
+                         | 4 | 5 | 6 |
+                         _____________
+                         | 7 | 8 | 9 |
+                         _____________
+                */
+                for(int i = 0;i <3;i++)
+                {
+                        StdOut.println(" _____________");
+                        for(int j = 0;j < 3;j++)
+                        {
+                                StdOut.print(" | " + board[i][j]);
                         }
-                        StdOut.printf("\n");
+                        StdOut.print(" |\n");
                 }
-
+                StdOut.println(" _____________");
         }
 
         public static void main(String[] args) {
-
-                TicTacToe burd = new TicTacToe();
-                burd.displayBoard();
-                StdOut.println("TicTacToooooe");
+                //main function should only need to create a Game instance and run play()
+                TicTacToe game = new TicTacToe();
+                game.play();
         }
 }
 
