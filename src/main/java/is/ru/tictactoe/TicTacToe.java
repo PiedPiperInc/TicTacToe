@@ -17,33 +17,9 @@ public class TicTacToe {
 	}
 
 
-	public class Game {
-		private char[][] board;
-		private char player;
-		private boolean draw;
-
-		public void turn(char input) {
-
-		}
-
-		public char[][] getBoard() {
-			return new char[3][3];
-		}
-
-		public char getPlayer() {
-			return '0';
-		}
-
-		public boolean checkIfInputIsValid(char input) {
-			return false;
-		}
-
-		private boolean gameOver(char[][] board) {
-			return false;
-		}
-	}
-
 	public static void main(String[] args) {
+		Game theGame = new Game();
+		theGame.turn('0');
 		StdOut.println("TicTacToooooe");
 	}
 }
