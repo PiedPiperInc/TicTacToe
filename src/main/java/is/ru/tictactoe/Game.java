@@ -44,10 +44,16 @@ public class Game {
 			return player;
 		}
 
-		public boolean checkIfInputIsValid(char input) {
-			if(input > 48 && input < 58)
-				return true;
-			return false;
+		public char checkIfInputIsValid(int input) {
+			if(input >= 1 && input <= 9){
+				input += 48;
+			}
+			else{
+				throw new IllegalArgumentException("NO!");
+			}
+			char convert = (char) input;
+				
+			return convert;
 		}
 
 		private boolean gameOver(char[][] board) {
