@@ -9,6 +9,7 @@ public class TicTacToe {
 	}
 
 	private char getInput() {
+		return '0';
 	}
 
 	private void displayBoard(char[][] board) {
