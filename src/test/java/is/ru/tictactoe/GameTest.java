@@ -2,7 +2,8 @@ package is.ru.tictactoe;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
-
+import org.junit.rules.ExpectedException;
+import org.junit.Rule;
 public class GameTest {
 	@Test
 	public void testInitializeBoard() {
@@ -19,6 +20,24 @@ public class GameTest {
 	@Test
 	public void TestInput(){
 		Game theGame = new Game();
-		assertEquals(true, theGame.checkIfInputIsValid('3'));
+		assertEquals('1', theGame.checkIfInputIsValid(1));
 	}
+	@Rule
+	public ExpectedException thrown = ExpectedException.none();
+	
+	@Test
+	public void TestLargeInput() throws IllegalArgumentException {
+     		Game theGame = new Game();
+        	thrown.expect(IllegalArgumentException.class);
+		thrown.expectMessage("NO!");
+		theGame.checkIfInputIsValid(10);
+	}
+        @Test
+        public void TestCharInput() throws IllegalArgumentException {
+                Game theGame = new Game();
+                thrown.expect(IllegalArgumentException.class);
+                thrown.expectMessage("NO!");
+                theGame.checkIfInputIsValid('A');
+        }
+
 }
