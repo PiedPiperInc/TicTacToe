@@ -22,22 +22,32 @@ public class GameTest {
 		Game theGame = new Game();
 		assertEquals('1', theGame.checkIfInputIsValid(1));
 	}
-	@Rule
-	public ExpectedException thrown = ExpectedException.none();
 	
 	@Test
 	public void TestLargeInput() throws IllegalArgumentException {
      		Game theGame = new Game();
-        	thrown.expect(IllegalArgumentException.class);
-		thrown.expectMessage("NO!");
-		theGame.checkIfInputIsValid(10);
+			assertEquals('0' ,theGame.checkIfInputIsValid(10));
 	}
-        @Test
-        public void TestCharInput() throws IllegalArgumentException {
-                Game theGame = new Game();
-                thrown.expect(IllegalArgumentException.class);
-                thrown.expectMessage("NO!");
-                theGame.checkIfInputIsValid('A');
-        }
+    
+    @Test
+    public void TestCharInput() throws IllegalArgumentException {
+        Game theGame = new Game();
+        assertEquals('0', theGame.checkIfInputIsValid('A'));
+    }
+
+    @Test
+    public void testAlreadyTakenSpot() {
+    	char[][] board = new char[3][3];
+    	char counter = 49;
+    	for(int i=0; i < 3; i++) {
+			for(int j = 0; j < 3; j++) {
+				board[i][j] = counter;
+				counter++; 
+			}
+		}
+		board[0][0] = 'X';
+		Game theGame = new Game(board);
+		assertEquals('0', theGame.checkIfInputIsValid(1));
+    }
 
 }

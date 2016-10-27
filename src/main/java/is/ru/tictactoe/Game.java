@@ -22,6 +22,12 @@ public class Game {
 			initializeBoard(board);
 		}
 
+		public Game(char[][] board) {
+			this.board = board;
+			player = 'O';
+			draw = false;
+		}
+
 		private void initializeBoard(char[][] board) {
 			char counter = 49;	//counter starts at ascii value for 1
 			for(int i=0; i < 3; i++) {
@@ -47,9 +53,12 @@ public class Game {
 		public char checkIfInputIsValid(int input) {
 			if(input >= 1 && input <= 9){
 				input += 48;
+				if(board[(input - '1')/3][(input - '1')%3] != (char) input ){
+					return '0';
+				} 
 			}
 			else{
-				throw new IllegalArgumentException("NO!");
+				return '0';
 			}
 			char convert = (char) input;
 				
