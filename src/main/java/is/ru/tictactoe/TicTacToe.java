@@ -19,7 +19,7 @@ public class TicTacToe {
 
                 char convert = '0';
 
-                while(convert = '0')
+                while(convert == '0')
                 {
                 StdOut.print("Please insert a number between 1 to 9: ");
                 //Asks user to insert valid numbers
