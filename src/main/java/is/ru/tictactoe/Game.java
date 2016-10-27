@@ -38,8 +38,17 @@ public class Game {
 			}
 		}
 
-		public  void turn(char input) {
+		public void turn(char input) {
 
+
+			board[(input - '1')/3][(input - '1')%3] = player; //Assign the correct letter to the correct index of the board
+
+			if(player == 'X'){ //If previous move was made by X, then the next move belongs to O
+				player = 'O';
+			}
+			else{
+				player = 'X';
+			}
 		}
 
 		public char[][] getBoard() {
