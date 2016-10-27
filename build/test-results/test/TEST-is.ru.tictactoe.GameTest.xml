@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="is.ru.tictactoe.GameTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-10-26T12:38:34" hostname="clients-pool-1.nat.ru.is" time="0.001">
+<testsuite name="is.ru.tictactoe.GameTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-10-27T11:47:24" hostname="Axels-MacBook-Pro.local" time="0.025">
   <properties/>
+  <testcase name="TestCharInput" classname="is.ru.tictactoe.GameTest" time="0.015"/>
   <testcase name="testInitializeBoard" classname="is.ru.tictactoe.GameTest" time="0.001"/>
+  <testcase name="TestLargeInput" classname="is.ru.tictactoe.GameTest" time="0.004"/>
+  <testcase name="TestInput" classname="is.ru.tictactoe.GameTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

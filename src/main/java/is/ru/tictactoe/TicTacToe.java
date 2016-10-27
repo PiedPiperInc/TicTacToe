@@ -13,8 +13,14 @@ public class TicTacToe {
 
         }
 
-        private char getInput() {
-                return '0';
+        private char getInput(int input) {
+
+                input = StdIn.readInt();
+                //Gets the input from user
+                char convert = checkIfInputIsValid(input);
+                //checks if the input is valid and returns the input
+
+                return convert;
         }
 
         public void displayBoard(char[][] board) {
