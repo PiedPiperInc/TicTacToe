@@ -17,8 +17,6 @@ public class TicTacToe {
 
                 Game game = new Game();
 
-<<<<<<< HEAD
-=======
                 char convert = '0';
 
                 while(convert == '0')
@@ -26,7 +24,6 @@ public class TicTacToe {
                 StdOut.print("Please insert a number between 1 to 9: ");
                 //Asks user to insert valid numbers
 
->>>>>>> feature
                 int input = StdIn.readInt();
                 //Gets the input from user
 
