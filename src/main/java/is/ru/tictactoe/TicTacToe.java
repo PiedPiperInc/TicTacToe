@@ -15,9 +15,11 @@ public class TicTacToe {
 
         private char getInput(int input) {
 
+                Game game = new Game();
+
                 input = StdIn.readInt();
                 //Gets the input from user
-                char convert = checkIfInputIsValid(input);
+                char convert = game.checkIfInputIsValid(input);
                 //checks if the input is valid and returns the input
 
                 return convert;
