@@ -51,7 +51,7 @@ public class GameTest {
     }
 
     @Test
-    public void testTurn(){
+    public void testCorrectAnswerInTurn(){
     	Game game = new Game();
     	game.turn('1');
     	char[][] board = game.getBoard();
