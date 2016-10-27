@@ -8,8 +8,28 @@ public class TicTacToe {
                 //initialize a new Game. This fills the board with numbers 1-9
                 Game game = new Game();
 
+                while(!game.gameOver() && !game.draw){
+
                 //display the board with the board from the game class
                 displayBoard(game.getBoard());
+
+                char input = getInput();
+
+                game.turn(input);
+
+            }
+            if(game.draw){
+                StdOut.println("It's a draw!");
+            } 
+            else if(game.getPlayer() == 'X'){
+
+                StdOut.println("O is the winner!");
+            }
+            else{
+
+                StdOut.println("X is the winner!");
+            }
+
 
         }
 
