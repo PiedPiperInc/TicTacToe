@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="is.ru.tictactoe.GameTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-10-27T13:19:50" hostname="Axels-MacBook-Pro.local" time="0.024">
+<testsuite name="is.ru.tictactoe.GameTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-10-27T17:05:05" hostname="Lenovo-PC" time="0.005">
   <properties/>
-  <testcase name="TestCharInput" classname="is.ru.tictactoe.GameTest" time="0.018"/>
-  <testcase name="testInitializeBoard" classname="is.ru.tictactoe.GameTest" time="0.001"/>
-  <testcase name="TestLargeInput" classname="is.ru.tictactoe.GameTest" time="0.001"/>
+  <testcase name="TestCharInput" classname="is.ru.tictactoe.GameTest" time="0.002"/>
+  <testcase name="testTurn" classname="is.ru.tictactoe.GameTest" time="0.0"/>
+  <testcase name="testInitializeBoard" classname="is.ru.tictactoe.GameTest" time="0.0"/>
+  <testcase name="TestLargeInput" classname="is.ru.tictactoe.GameTest" time="0.0"/>
+  <testcase name="testAlreadyTakenSpot" classname="is.ru.tictactoe.GameTest" time="0.0"/>
   <testcase name="TestInput" classname="is.ru.tictactoe.GameTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

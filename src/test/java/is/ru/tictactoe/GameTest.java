@@ -50,4 +50,12 @@ public class GameTest {
 		assertEquals('0', theGame.checkIfInputIsValid(1));
     }
 
+    @Test
+    public void testCorrectAnswerInTurn(){
+    	Game game = new Game();
+    	game.turn('1');
+    	char[][] board = game.getBoard();
+    	assertEquals('X', board[0][0]);
+    }
+
 }
