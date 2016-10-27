@@ -24,13 +24,13 @@ public class GameTest {
 	}
 	
 	@Test
-	public void TestLargeInput() throws IllegalArgumentException {
+	public void TestLargeInput(){
      		Game theGame = new Game();
-			assertEquals('0' ,theGame.checkIfInputIsValid(10));
+		assertEquals('0' ,theGame.checkIfInputIsValid(10));
 	}
     
     @Test
-    public void TestCharInput() throws IllegalArgumentException {
+    public void TestCharInput(){
         Game theGame = new Game();
         assertEquals('0', theGame.checkIfInputIsValid('A'));
     }
@@ -40,14 +40,24 @@ public class GameTest {
     	char[][] board = new char[3][3];
     	char counter = 49;
     	for(int i=0; i < 3; i++) {
-			for(int j = 0; j < 3; j++) {
-				board[i][j] = counter;
-				counter++; 
+		for(int j = 0; j < 3; j++) {
+			board[i][j] = counter;
+			counter++; 
+		}
+	}
+	board[0][0] = 'X';
+	Game theGame = new Game(board);
+	assertEquals('0', theGame.checkIfInputIsValid(1));
+    }
+	@Test
+	public void testIfWinner(){
+		char[][] board = new char[3][3];
+		for(int i = 0; i < 3; i++){
+			for(int j = 0; j < 3; j++){
+				board[i][j] = 'X';
 			}
 		}
-		board[0][0] = 'X';
 		Game theGame = new Game(board);
-		assertEquals('0', theGame.checkIfInputIsValid(1));
-    }
-
+		assertEquals(true, theGame.gameOver());
+	}
 }
