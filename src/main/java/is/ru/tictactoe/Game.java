@@ -14,12 +14,14 @@ public class Game {
 		private char[][] board;
 		private char player; //represents the player whose turn it is, X or O
 		private boolean draw; //represents if there is a draw in the game
-
+		private int turns;
 		public Game() {
 			board = new char[3][3];
 			player = 'X';
 			draw = false;
+			turns = 0;
 			initializeBoard(board);
+			gameOver();
 		}
 
 		public Game(char[][] board) {
@@ -73,9 +75,39 @@ public class Game {
 				
 			return convert;
 		}
+		public boolean gameOver() {
 
-		private boolean gameOver(char[][] board) {
-			return false;
+		//checks for winner horizontally
+		for(int i = 0; i < 3; i++){
+			if(board[i][0] == board[i][1] && board[i][1] == board[i][2]){
+				return true;
+			}	
+		}
+
+		//checks for winner vertically
+		for(int i = 0; i < 3; i++){
+			if(board[0][i] == board[1][i] && board[1][i] == board[2][i]){
+				return true;
+			}	
+		}	
+
+		//checks for winner diagonally
+		if(board[0][0] == board[1][1] && board[1][1] == board[2][2]){
+			return true;
+		}
+
+		//checks for winner diagonally			
+		if(board[0][2] == board[1][1] && board[1][1] == board[2][0]){
+			return true;
+		}
+
+		turns++;
+
+		//checks if its a draw
+		if(turns == 9){
+			draw = true;
+		}
+		return false;
 		}
 
 		public static void main(String[] args) {
