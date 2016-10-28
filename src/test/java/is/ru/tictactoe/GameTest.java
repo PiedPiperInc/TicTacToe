@@ -40,15 +40,16 @@ public class GameTest {
     	char[][] board = new char[3][3];
     	char counter = 49;
     	for(int i=0; i < 3; i++) {
-		for(int j = 0; j < 3; j++) {
-			board[i][j] = counter;
-			counter++; 
+			for(int j = 0; j < 3; j++) {
+				board[i][j] = counter;
+				counter++; 
+			}
 		}
-	}
-	board[0][0] = 'X';
-	Game theGame = new Game(board);
-	assertEquals('0', theGame.checkIfInputIsValid(1));
+		board[0][0] = 'X';
+		Game theGame = new Game(board);
+		assertEquals('0', theGame.checkIfInputIsValid(1));
     }
+
 	@Test
     	public void testCorrectAnswerInTurn(){
         	Game game = new Game();
@@ -67,5 +68,32 @@ public class GameTest {
 		}
 		Game theGame = new Game(board);
 		assertEquals(true, theGame.gameOver());
+	}
+
+	@Test
+	public void testIfPlayerIsO(){
+		Game theGame = new Game();
+		char input = '1';
+		theGame.turn(input);
+		input = '4';
+		theGame.turn(input);
+		input = '2';
+		theGame.turn(input);
+		assertEquals('O', theGame.getPlayer());
+	}
+
+	@Test
+	public void testWrongInputPlayer(){
+		Game theGame = new Game();
+		char input = '8';
+		theGame.turn(input);
+		input = '4';
+		theGame.turn(input);
+		input = theGame.checkIfInputIsValid(4);
+		if(input != '0'){
+			theGame.turn(input);
+		}
+		else{}
+		assertEquals('X', theGame.getPlayer());
 	}
 }
