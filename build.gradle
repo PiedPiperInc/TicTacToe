@@ -1,21 +1,21 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-mainClassName = "is.ru.tictactoe.TicTacToe"
+mainClassName = "is.ru.tictactoe.TicTacToeWeb"
 
 repositories {
     jcenter()
 }
 
-jar {
-     manifest {
-	     attributes("Main-Class": "is.ru.tictactoe.TicTacToe")
-	     }
-    }
+task stage {
+  dependsOn 'installDist', 'build'
+}
 
 dependencies {
     compile 'org.slf4j:slf4j-api:1.7.5'
-    compile files('lib/algs4.jar')
+
     testCompile 'junit:junit:4.11'
 
+    compile 'net.joningi:icndb-java-api:1.0'
+    compile 'com.sparkjava:spark-core:2.5'
 }
