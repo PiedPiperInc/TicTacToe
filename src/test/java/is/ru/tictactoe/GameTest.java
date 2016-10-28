@@ -234,7 +234,7 @@ public class GameTest {
 			}
 		}
 		Game theGame = new Game(board);
-		assertEquals(truecd, theGame.gameOver());
+		assertEquals(true, theGame.gameOver());
 	}
 
 	@Test
