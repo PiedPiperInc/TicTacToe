@@ -4,9 +4,10 @@ import edu.princeton.cs.algs4.*;
 
 public class TicTacToe {
 
+	Game game;
         public void play() {
                 //initialize a new Game. This fills the board with numbers 1-9
-                Game game = new Game();
+                game = new Game();
 
                 while(!game.gameOver() && !game.draw){
 
@@ -18,7 +19,8 @@ public class TicTacToe {
                 game.turn(input);
 
             }
-            if(game.draw){
+   		displayBoard(game.getBoard());    
+	    if(game.draw){
                 StdOut.println("It's a draw!");
             } 
             else if(game.getPlayer() == 'X'){
@@ -34,8 +36,6 @@ public class TicTacToe {
         }
 
         private char getInput() {
-
-                Game game = new Game();
 
                 char convert = '0';
 

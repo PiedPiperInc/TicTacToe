@@ -64,7 +64,7 @@ public class Game {
 		public char checkIfInputIsValid(int input) {
 			if(input >= 1 && input <= 9){
 				input += 48;
-				if(board[(input - '1')/3][(input - '1')%3] != (char) input ){
+				if(board[(input - '1')/3][(input - '1')%3] != (char) input){ 
 					return '0';
 				} 
 			}
