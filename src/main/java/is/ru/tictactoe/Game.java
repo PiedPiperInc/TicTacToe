@@ -14,14 +14,11 @@ public class Game {
 		private char[][] board;
 		private char player; //represents the player whose turn it is, X or O
 		public boolean draw; //represents if there is a draw in the game
-		private int turns;
 		public Game() {
 			board = new char[3][3];
 			player = 'X';
 			draw = false;
-			turns = 0;
 			initializeBoard(board);
-			gameOver();
 		}
 
 		public Game(char[][] board) {
@@ -101,12 +98,16 @@ public class Game {
 			return true;
 		}
 
-		turns++;
 
 		//checks if its a draw
-		if(turns == 9){
-			draw = true;
+		for(int i = 0; i < 3; i++){
+			for(int j = 0; j < 3; j++){
+				if(board[i][j] != 'X' && board[i][j] != 'O')
+					return false;
+			}	
 		}
+			draw = true;
+
 		return false;
 		}
 
