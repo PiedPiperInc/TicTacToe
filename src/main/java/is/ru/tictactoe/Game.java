@@ -13,7 +13,7 @@ public class Game {
 		*/
 		private char[][] board;
 		private char player; //represents the player whose turn it is, X or O
-		private boolean draw; //represents if there is a draw in the game
+		public boolean draw; //represents if there is a draw in the game
 		private int turns;
 		public Game() {
 			board = new char[3][3];
@@ -110,6 +110,6 @@ public class Game {
 		return false;
 		}
 
-		public static void main(String[] args) {
-		}
+		//public static void main(String[] args) {
+		//}
 	}
