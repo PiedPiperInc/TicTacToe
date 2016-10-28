@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="is.ru.tictactoe.GameTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2016-10-28T19:18:29" hostname="Lenovo-PC" time="0.003">
+<testsuite name="is.ru.tictactoe.GameTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2016-10-28T21:27:30" hostname="Kris" time="0.006">
   <properties/>
-  <testcase name="TestCharInput" classname="is.ru.tictactoe.GameTest" time="0.002"/>
+  <testcase name="testWinnerHorizontalTop" classname="is.ru.tictactoe.GameTest" time="0.002"/>
+  <testcase name="testWinnerDiagonalDown" classname="is.ru.tictactoe.GameTest" time="0.0"/>
+  <testcase name="TestCharInput" classname="is.ru.tictactoe.GameTest" time="0.0"/>
   <testcase name="testInitializeBoard" classname="is.ru.tictactoe.GameTest" time="0.0"/>
+  <testcase name="testWinnerVerticalLeft" classname="is.ru.tictactoe.GameTest" time="0.0"/>
   <testcase name="TestLargeInput" classname="is.ru.tictactoe.GameTest" time="0.0"/>
   <testcase name="testAlreadyTakenSpot" classname="is.ru.tictactoe.GameTest" time="0.0"/>
   <testcase name="TestInput" classname="is.ru.tictactoe.GameTest" time="0.0"/>
   <testcase name="testCorrectAnswerInTurn" classname="is.ru.tictactoe.GameTest" time="0.0"/>
   <testcase name="testIfPlayerIsO" classname="is.ru.tictactoe.GameTest" time="0.0"/>
-  <testcase name="testWrongInputPlayer" classname="is.ru.tictactoe.GameTest" time="0.0"/>
+  <testcase name="testIfDraw" classname="is.ru.tictactoe.GameTest" time="0.0"/>
+  <testcase name="testWinnerVerticalRight" classname="is.ru.tictactoe.GameTest" time="0.0"/>
+  <testcase name="testWinnerHorizontalBottom" classname="is.ru.tictactoe.GameTest" time="0.0"/>
+  <testcase name="testWinnerVerticalMiddle" classname="is.ru.tictactoe.GameTest" time="0.0"/>
+  <testcase name="testWrongInputPlayer" classname="is.ru.tictactoe.GameTest" time="0.001"/>
   <testcase name="testIfWinner" classname="is.ru.tictactoe.GameTest" time="0.0"/>
+  <testcase name="testWinnerDiagonalUp" classname="is.ru.tictactoe.GameTest" time="0.0"/>
+  <testcase name="testWinnerHorizontalMiddle" classname="is.ru.tictactoe.GameTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

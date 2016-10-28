@@ -96,4 +96,184 @@ public class GameTest {
 		else{}
 		assertEquals('X', theGame.getPlayer());
 	}
+
+	@Test
+	public void testIfDraw(){
+		char[][] board = new char[3][3];
+		for(int i = 0; i < 3; i++){
+			for(int j = 0; j < 3; j++){
+				board[0][0] = 'X';
+				board[0][1] = 'O';
+				board[0][2] = 'O';
+				board[1][0] = 'O';
+				board[1][1] = 'X';
+				board[1][2] = 'X';
+				board[2][0] = 'X';
+				board[2][1] = 'X';
+				board[2][2] = 'O';
+			}
+		}
+		Game theGame = new Game(board);
+		assertEquals(false, theGame.gameOver());
+	}
+
+	@Test
+	public void testWinnerHorizontalTop(){
+		char[][] board = new char[3][3];
+		for(int i = 0; i < 3; i++){
+			for(int j = 0; j < 3; j++){
+				board[0][0] = 'X';
+				board[0][1] = 'X';
+				board[0][2] = 'X';
+				board[1][0] = 'O';
+				board[1][1] = 'O';
+				board[1][2] = 'X';
+				board[2][0] = 'O';
+				board[2][1] = 'X';
+				board[2][2] = 'O';
+			}
+		}
+		Game theGame = new Game(board);
+		assertEquals(true, theGame.gameOver());
+	}
+
+	@Test
+	public void testWinnerHorizontalMiddle(){
+		char[][] board = new char[3][3];
+		for(int i = 0; i < 3; i++){
+			for(int j = 0; j < 3; j++){
+				board[0][0] = 'O';
+				board[0][1] = 'O';
+				board[0][2] = 'X';
+				board[1][0] = 'X';
+				board[1][1] = 'X';
+				board[1][2] = 'X';
+				board[2][0] = 'O';
+				board[2][1] = 'X';
+				board[2][2] = 'O';
+			}
+		}
+		Game theGame = new Game(board);
+		assertEquals(true, theGame.gameOver());
+	}
+
+	@Test
+	public void testWinnerHorizontalBottom(){
+		char[][] board = new char[3][3];
+		for(int i = 0; i < 3; i++){
+			for(int j = 0; j < 3; j++){
+				board[0][0] = 'O';
+				board[0][1] = 'X';
+				board[0][2] = 'O';
+				board[1][0] = 'O';
+				board[1][1] = 'O';
+				board[1][2] = 'X';
+				board[2][0] = 'X';
+				board[2][1] = 'X';
+				board[2][2] = 'X';
+			}
+		}
+		Game theGame = new Game(board);
+		assertEquals(true, theGame.gameOver());
+	}
+
+	@Test
+	public void testWinnerVerticalLeft(){
+		char[][] board = new char[3][3];
+		for(int i = 0; i < 3; i++){
+			for(int j = 0; j < 3; j++){
+				board[0][0] = 'X';
+				board[0][1] = 'O';
+				board[0][2] = 'O';
+				board[1][0] = 'X';
+				board[1][1] = 'O';
+				board[1][2] = 'X';
+				board[2][0] = 'X';
+				board[2][1] = 'X';
+				board[2][2] = 'O';
+			}
+		}
+		Game theGame = new Game(board);
+		assertEquals(true, theGame.gameOver());
+	}
+
+	@Test
+	public void testWinnerVerticalMiddle(){
+		char[][] board = new char[3][3];
+		for(int i = 0; i < 3; i++){
+			for(int j = 0; j < 3; j++){
+				board[0][0] = 'O';
+				board[0][1] = 'X';
+				board[0][2] = 'O';
+				board[1][0] = 'O';
+				board[1][1] = 'X';
+				board[1][2] = 'X';
+				board[2][0] = 'X';
+				board[2][1] = 'X';
+				board[2][2] = 'O';
+			}
+		}
+		Game theGame = new Game(board);
+		assertEquals(true, theGame.gameOver());
+	}
+
+	@Test
+	public void testWinnerVerticalRight(){
+		char[][] board = new char[3][3];
+		for(int i = 0; i < 3; i++){
+			for(int j = 0; j < 3; j++){
+				board[0][0] = 'O';
+				board[0][1] = 'X';
+				board[0][2] = 'X';
+				board[1][0] = 'O';
+				board[1][1] = 'O';
+				board[1][2] = 'X';
+				board[2][0] = 'X';
+				board[2][1] = 'O';
+				board[2][2] = 'X';
+			}
+		}
+		Game theGame = new Game(board);
+		assertEquals(true, theGame.gameOver());
+	}
+
+	@Test
+	public void testWinnerDiagonalDown(){
+		char[][] board = new char[3][3];
+		for(int i = 0; i < 3; i++){
+			for(int j = 0; j < 3; j++){
+				board[0][0] = 'X';
+				board[0][1] = 'O';
+				board[0][2] = 'O';
+				board[1][0] = 'X';
+				board[1][1] = 'X';
+				board[1][2] = 'O';
+				board[2][0] = 'O';
+				board[2][1] = 'X';
+				board[2][2] = 'X';
+			}
+		}
+		Game theGame = new Game(board);
+		assertEquals(true, theGame.gameOver());
+	}
+
+	@Test
+	public void testWinnerDiagonalUp(){
+		char[][] board = new char[3][3];
+		for(int i = 0; i < 3; i++){
+			for(int j = 0; j < 3; j++){
+				board[0][0] = 'X';
+				board[0][1] = 'O';
+				board[0][2] = 'X';
+				board[1][0] = 'O';
+				board[1][1] = 'X';
+				board[1][2] = 'O';
+				board[2][0] = 'X';
+				board[2][1] = 'X';
+				board[2][2] = 'O';
+			}
+		}
+		Game theGame = new Game(board);
+		assertEquals(true, theGame.gameOver());
+	}
 }
