@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="is.ru.tictactoe.TicTacToeTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2016-10-29T18:19:48" hostname="clients-pool-1.nat.ru.is" time="0.071">
+<testsuite name="is.ru.tictactoe.TicTacToeTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2016-10-29T20:01:59" hostname="clients-pool-1.nat.ru.is" time="0.079">
   <properties/>
-  <testcase name="testWinnerHorizontalTop" classname="is.ru.tictactoe.TicTacToeTest" time="0.048"/>
+  <testcase name="testWinnerHorizontalTop" classname="is.ru.tictactoe.TicTacToeTest" time="0.055"/>
   <testcase name="testWinnerDiagonalDown" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
   <testcase name="TestCharInput" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
   <testcase name="testInitializeBoard" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
