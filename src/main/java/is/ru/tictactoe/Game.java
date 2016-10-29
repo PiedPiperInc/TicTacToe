@@ -45,15 +45,14 @@ public class Game {
                 return player;
             }
 
-            else {
-                board[(input - '1')/3][(input - '1')%3] = player;
-                char thePlayer = player;
-                if(player == 'X')
-                    player = 'O';
-                else if(player == 'O')
-                    player = 'X';
-                return thePlayer;
-            }
+            board[(input - '1')/3][(input - '1')%3] = player;
+            char thePlayer = player;
+            if(player == 'X')
+                player = 'O';
+            else if(player == 'O')
+                player = 'X';
+           
+           return thePlayer;
 		}
 
 		public char[][] getBoard() {
