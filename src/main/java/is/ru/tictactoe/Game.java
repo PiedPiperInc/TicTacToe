@@ -18,7 +18,7 @@ public class Game {
 			board = new char[3][3];
 			player = 'X';
 			draw = false;
-			initializeBoard(board);
+			initialize();
 		}
 
 		public Game(char[][] board) {
@@ -27,7 +27,7 @@ public class Game {
 			draw = false;
 		}
 
-		private void initializeBoard(char[][] board) {
+		private void initialize() {
 			char counter = 49;	//counter starts at ascii value for 1
 			for(int i=0; i < 3; i++) {
 				for(int j = 0; j < 3; j++) {
@@ -78,30 +78,34 @@ public class Game {
 			return convert;
 		}
 
-		public boolean gameOver() {
+		public String gameOver() {
 
 		//checks for winner horizontally
 		for(int i = 0; i < 3; i++){
 			if(board[i][0] == board[i][1] && board[i][1] == board[i][2]){
-				return true;
+				initialize();
+				return "true";
 			}	
 		}
 
 		//checks for winner vertically
 		for(int i = 0; i < 3; i++){
 			if(board[0][i] == board[1][i] && board[1][i] == board[2][i]){
-				return true;
+				initialize();
+				return "true";
 			}	
 		}	
 
 		//checks for winner diagonally
 		if(board[0][0] == board[1][1] && board[1][1] == board[2][2]){
-			return true;
+			initialize();
+			return "true";
 		}
 
 		//checks for winner diagonally			
 		if(board[0][2] == board[1][1] && board[1][1] == board[2][0]){
-			return true;
+			initialize();
+			return "true";
 		}
 
 
@@ -109,11 +113,10 @@ public class Game {
 		for(int i = 0; i < 3; i++){
 			for(int j = 0; j < 3; j++){
 				if(board[i][j] != 'X' && board[i][j] != 'O')
-					return false;
+					return "false";
 			}	
 		}
-			draw = true;
-
-		return false;
+		
+		return "draw";
 		}
 	}
