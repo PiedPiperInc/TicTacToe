@@ -19,9 +19,9 @@
                     if($('#' + id).text() != 'X' && $('#' + id).text() != 'O') {
                         $('#' + id).html(String(player));
                         if(player == 'X')
-                            $('#currentPlayer').html("Player O it's your turn!");
+                            $('#currentPlayer').html("Player O it's your turn");
                         else    
-                            $('#currentPlayer').html("Player X it's your turn!");
+                            $('#currentPlayer').html("Player X it's your turn");
                     }
                     $.ajax({
                     type: 'POST',
@@ -32,18 +32,25 @@
                         for(i = 1; i <= 10; i++) {
                             $('#' + i).html('');
                         }
-                        $('#results').fadeIn();
-                        $('#results').html('Game over! The winner is '  + String(player)  + "!!!!").attr('class', 'alert alert-success');
-                        $('#results').fadeOut(5000);
+                        alert('Game over! The winner is '  + String(player)  + "!!!!");
                     }
                     else if(gameover == 'draw') {
                         for(i = 1; i <= 10; i++) {
                             $('#' + i).html('');
                         }
-                        $('#results').fadeIn();
-                        $('#results').html("Game over! It's a draw! Everybody loses").attr('class', 'alert alert-success');
-                        $('#results').fadeOut(5000);
+                        alert("Game over! It's a draw! Everybody loses");
                     }
+
+                    $.ajax({
+                        type: 'POST',
+                        url: '/getWins',
+                        data: null
+                    }).done(function(wins) {
+                        var result = wins.split(" ");
+                        $('#Xwins').html("Player X: " + result[0] + " wins");
+                        $('#Owins').html("Player O: " + result[1] + " wins");
+                        $('#Draws').html("Draws: " + result[2]);
+                    });
                 });   
                 }).fail(function() {
                     $('#results').html('Error, no joke found...').attr('class', 'alert alert-danger');

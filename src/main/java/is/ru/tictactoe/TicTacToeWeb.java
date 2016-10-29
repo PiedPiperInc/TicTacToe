@@ -23,6 +23,7 @@ public class TicTacToeWeb implements SparkApplication {
     public void init() {
         final Game game = new Game();
         post("/turn", (req, res) -> game.turn(req.queryParams("inputID")));
+        post("/getWins", (req, res) -> game.getWins());
         post("/gameover", (req,res) -> game.gameOver());
     }
 

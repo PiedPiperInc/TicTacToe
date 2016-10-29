@@ -14,9 +14,15 @@ public class Game {
 		private char[][] board;
 		private char player; //represents the player whose turn it is, X or O
 		public boolean draw;
+		private int xWins;
+		private int oWins;
+		private int draws;
 
 		public Game() {
 			initialize();
+			xWins = 0;
+			oWins = 0;
+			draws = 0;
 		}
 
 		public Game(char[][] board) {
@@ -78,11 +84,22 @@ public class Game {
 			return convert;
 		}
 
+		public String getWins() {
+			return xWins + " " + oWins + " " + draws;
+		}
+
+
 		public String gameOver() {
 
 		//checks for winner horizontally
 		for(int i = 0; i < 3; i++){
 			if(board[i][0] == board[i][1] && board[i][1] == board[i][2]){
+				if(player == 'X') {
+					oWins++;
+				}
+				else {
+					xWins++;
+				}
 				initialize();
 				return "true";
 			}	
@@ -91,6 +108,12 @@ public class Game {
 		//checks for winner vertically
 		for(int i = 0; i < 3; i++){
 			if(board[0][i] == board[1][i] && board[1][i] == board[2][i]){
+				if(player == 'X') {
+					oWins++;
+				}
+				else {
+					xWins++;
+				}
 				initialize();
 				return "true";
 			}	
@@ -98,12 +121,24 @@ public class Game {
 
 		//checks for winner diagonally
 		if(board[0][0] == board[1][1] && board[1][1] == board[2][2]){
+			if(player == 'X') {
+					oWins++;
+				}
+				else {
+					xWins++;
+				}
 			initialize();
 			return "true";
 		}
 
 		//checks for winner diagonally			
 		if(board[0][2] == board[1][1] && board[1][1] == board[2][0]){
+			if(player == 'X') {
+					oWins++;
+				}
+				else {
+					xWins++;
+				}
 			initialize();
 			return "true";
 		}
@@ -118,6 +153,7 @@ public class Game {
 		}
 		
 		initialize();
+		draws++;
 		return "draw";
 		}
 	}
