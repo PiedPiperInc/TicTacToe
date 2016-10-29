@@ -3,4 +3,3 @@ jdk:
 - oraclejdk8
 deploy:
   provider: heroku
-  app: quiet-lowlands-60339
