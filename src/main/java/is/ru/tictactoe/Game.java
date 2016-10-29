@@ -13,6 +13,8 @@ public class Game {
 		*/
 		private char[][] board;
 		private char player; //represents the player whose turn it is, X or O
+		public boolean draw;
+
 		public Game() {
 			board = new char[3][3];
 			initialize();
@@ -116,7 +118,7 @@ public class Game {
 			}	
 		}
 		
-		initalize();
+		initialize();
 		return "draw";
 		}
 	}
