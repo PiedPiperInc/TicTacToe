@@ -22,6 +22,7 @@ public class Game {
 			initialize();
 			xWins = 0;
 			oWins = 0;
+			draws = 1;
 			draws = 0;
 		}
 
