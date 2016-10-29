@@ -17,13 +17,24 @@
 
         function gameOver(gameover) {
             if(gameover == 'true') {
-                alert('Game over! The winner is '  + String(player)  + "!!!!");
                 $('#currentPlayer').html("Player X it's your turn");
                 $('#playAgain').html('<button onclick="anothaOne()" >Play again?</button>');
+                var audioElement = document.createElement('audio');
+                audioElement.setAttribute('src', 'win.mp3');
+                audioElement.setAttribute('autoplay', 'autoplay');
+                $.get();
+                audioElement.play();
+                alert('Game over! The winner is '  + String(player)  + "!!!!");
             }
+
             else if(gameover == 'draw') {
-                alert("Game over! It's a draw! Everybody loses");
                 $('#currentPlayer').html("Player X it's your turn");
+                var audioElement = document.createElement('audio');
+                audioElement.setAttribute('src', 'draw.mp3');
+                audioElement.setAttribute('autoplay', 'autoplay');
+                $.get();
+                audioElement.play();
+                alert("Game over! It's a draw! Everybody loses");
                 $('#playAgain').html('<button onclick="anothaOne()" >Play again?</button>');
             }
             if(gameover == 'true' || gameover == 'draw') {
