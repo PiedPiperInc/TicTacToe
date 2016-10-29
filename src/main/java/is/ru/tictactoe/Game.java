@@ -16,7 +16,6 @@ public class Game {
 		public boolean draw;
 
 		public Game() {
-			board = new char[3][3];
 			initialize();
 		}
 
@@ -27,6 +26,7 @@ public class Game {
 		}
 
 		private void initialize() {
+			board = new char[3][3];
 			char counter = 49;	//counter starts at ascii value for 1
 			for(int i=0; i < 3; i++) {
 				for(int j = 0; j < 3; j++) {
