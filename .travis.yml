@@ -5,7 +5,7 @@ deploy:
   provider: heroku
   api_key:
     secure: Jd/y5eWXkbOQtDgAJPyHkCk+QYfMm6e1J9vi12ROhiHL5u8EkdNn3xuCKNwqhqrpvTzHyUoZ2D6wiWq5MB4U6qVNENjOZ6Jg4GX3YXwayBHhZmraBElBN8KZfwtTMX7K8gfslkIQOMV05/u20lX2eAaJqP/Kp3wnhVt+tZxCTLDRYELSea8sJ2I1FLd4Dl1pF+plPKgdsoQYtNyl+8ES+j6wn1Xz8KlEkkaDslOvuAfhzxprb1iWAggc2S7zL/DQfXW897U9AZpUrhZFgygrlGQDozwcnJ/+7mdAD6n86qRZwtfunNB6kCiba6WAVNiriIIDrL2yig88oJdKIHqP80DN4GxF2KoT68e2yWnyUfHocDR7wzfF5DcGP1kpaoTIw6ZdsCbQfyyxsRwHl7tNJmsmpTzlD+pvWw8Fs/PamT0J3NULievYfgLp9xYsKON0AxXGNWEua29Ow2L44dBVU6VmXPTyvGG2+oJYR7O40mxR5mqUx+fycRNXtLwE7wdN11RhBYl3q71pJd7Ee7lj/SWvmT9QyPH3/LUcm95Tjr1LUxQ8m3cH01RZCeGx8pBkiCRoLrnf7L7pni/c2d0H4Q4TsIig524XkjtCz9hjCkw4SXxFzGI0t0fLe5WyGzBSN6bBeD5IfXZxrQg/feodnYsy5sf0qkzjMLbOfmG+nKc=
-  app: infinite-bastion-45831
+  app: mighty-journey-27712
   on:
     repo: PiedPiperInc/TicTacToe
     branch: webApplication
