@@ -13,11 +13,8 @@ public class Game {
 		*/
 		private char[][] board;
 		private char player; //represents the player whose turn it is, X or O
-		public boolean draw; //represents if there is a draw in the game
 		public Game() {
 			board = new char[3][3];
-			player = 'X';
-			draw = false;
 			initialize();
 		}
 
@@ -35,6 +32,8 @@ public class Game {
 					counter++; //counter is incremented
 				}
 			}
+
+			player = 'X';
 		}
 
 		public char turn(String s) {
@@ -117,6 +116,7 @@ public class Game {
 			}	
 		}
 		
+		initalize();
 		return "draw";
 		}
 	}
