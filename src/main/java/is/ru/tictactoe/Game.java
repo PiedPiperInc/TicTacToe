@@ -59,7 +59,12 @@ public class Game {
 		}
 
 		public char checkIfInputIsValid(int input) {
-			if(input >= 1 && input <= 9){
+
+			int[] inputLength = new int[1];
+			inputLength[0] = input;
+			input = inputLength[0];
+
+			if(input >= 1 && input <= 9 ){
 				input += 48;
 				if(board[(input - '1')/3][(input - '1')%3] != (char) input){ 
 					return '0';
@@ -68,10 +73,15 @@ public class Game {
 			else{
 				return '0';
 			}
+
+			
 			char convert = (char) input;
 				
 			return convert;
-		}
+
+			}
+			
+		
 		public boolean gameOver() {
 
 		//checks for winner horizontally
