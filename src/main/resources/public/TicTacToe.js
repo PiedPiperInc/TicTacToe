@@ -33,7 +33,7 @@
                             $('#' + i).html('');
                         }
                         $('#results').fadeIn();
-                        $('#results').html('Game over! The winner is ' + player + "!!!!").attr('class', 'alert alert-success');
+                        $('#results').html('Game over! The winner is  yo mama' +  + "!!!!").attr('class', 'alert alert-success');
                         $('#results').fadeOut(5000);
                     }
                     else if(gameover == 'draw') {
