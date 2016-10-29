@@ -19,9 +19,9 @@
                     if($('#' + id).text() != 'X' && $('#' + id).text() != 'O') {
                         $('#' + id).html(String(player));
                         if(player == 'X')
-                            $('#currentPlayer').html("Player O it's your turn!");
+                            $('#currentPlayer').html("Player O it's your turn");
                         else    
-                            $('#currentPlayer').html("Player X it's your turn!");
+                            $('#currentPlayer').html("Player X it's your turn");
                     }
                     $.ajax({
                     type: 'POST',
@@ -33,7 +33,7 @@
                             $('#' + i).html('');
                         }
                         $('#results').fadeIn();
-                        $('#results').html('Game over! The winner is  yo mama' +  + "!!!!").attr('class', 'alert alert-success');
+                        $('#results').html('Game over! The winner is '  + String(player)  + "!!!!").attr('class', 'alert alert-success');
                         $('#results').fadeOut(5000);
                     }
                     else if(gameover == 'draw') {
