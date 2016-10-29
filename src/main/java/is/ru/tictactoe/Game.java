@@ -13,7 +13,6 @@ public class Game {
 		*/
 		private char[][] board;
 		private char player; //represents the player whose turn it is, X or O
-		public boolean draw;
 		private int xWins;
 		private int oWins;
 		private int draws;
@@ -28,7 +27,6 @@ public class Game {
 		public Game(char[][] board) {
 			this.board = board;
 			player = 'O';
-			draw = false;
 		}
 
 		private void initialize() {
