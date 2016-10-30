@@ -1,4 +1,4 @@
-package is.ru.TicTacToe;
+package is.ru.tictactoe;
 
 import net.joningi.icndb.ICNDBClient;
 
