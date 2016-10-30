@@ -12,7 +12,7 @@
 
 ### To open in a browser:
 
-https://detroitbadboys-1337.herokuapp.com/
+https://detroitbadboys-3000.herokuapp.com/
 
 ### Clone the Tic Tac Toe [repository](https://github.com/PiedPiperInc/TicTacToe/) from Github in order to get access to the code.
 
