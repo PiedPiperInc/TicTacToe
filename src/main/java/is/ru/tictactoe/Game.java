@@ -3,7 +3,7 @@ package is.ru.tictactoe;
 import net.joningi.icndb.ICNDBClient;
 
 public class Game {
-
+		//this is something for spark
 		final ICNDBClient client = new ICNDBClient();
 		/*
 		board looks like this:
@@ -11,12 +11,14 @@ public class Game {
 			4 5 6
 			7 8 9
 		*/
-		private char[][] board;
+		private char[][] board; //this is the board of the game
 		private char player; //represents the player whose turn it is, X or O
-		private int xWins;
-		private int oWins;
-		private int draws;
+		private int xWins;	//number of wins for player X
+		private int oWins;	//number of wins for player O
+		private int draws;  //number of draws
 
+
+		//initializes the board and private variables
 		public Game() {
 			initialize();
 			xWins = 0;
@@ -28,6 +30,9 @@ public class Game {
 			this.board = board;
 			player = 'O';
 		}
+
+
+
 
 		private void initialize() {
 			board = new char[3][3];
@@ -42,6 +47,13 @@ public class Game {
 			player = 'X';
 		}
 
+
+
+		/*
+		this puts a character on the board, X or O
+		it returns the current player as a response 
+		to an ajax request from the javascript code
+		*/
 		public char turn(String s) {
 
 			char input = s.charAt(0);
@@ -59,14 +71,24 @@ public class Game {
            return thePlayer;
 		}
 
+
+		//returns the board
 		public char[][] getBoard() {
 			return board;
 		}
 
+
+		//returns the current player
 		public char getPlayer() {
 			return player;
 		}
 
+
+		/*
+		this checks the input, we used this for the console application
+		we don't really need it for the web app because the user
+		is not giving input, the user is clicking
+		*/
 		public char checkIfInputIsValid(int input) {
 
 			int[] inputLength = new int[1];
@@ -90,11 +112,19 @@ public class Game {
 
 			}
 
+
+		//returns the wins of both players and the number of draws as a response to ajax
 		public String getWins() {
 			return xWins + " " + oWins + " " + draws;
 		}
 
 
+
+		/*
+		this returns 'true' if there is a winner, 'false' if not and 'draw' if there is a draw
+		This returns string because it's a response to an ajax requests and always came
+		as a string either way in our javascript code
+		*/
 		public String gameOver() {
 
 		//checks for winner horizontally
