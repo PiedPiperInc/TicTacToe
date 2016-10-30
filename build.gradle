@@ -7,7 +7,7 @@ repositories {
     jcenter()
 }
 task stage {
-  dependsOn 'installDist', 'build'
+  dependsOn installDist
 }
 
 dependencies {

@@ -11,5 +11,4 @@
 ## Að deploy'a, keyra og viðhalda kerfinu
 
  - Til að deploy'a kerfinu, er keyrð skipunin "gradle build", Gradle sér þá um að compile'a allan kóða og deploy'ar ef hann finnur engar villur.
- - Til að keyra kerfið, er keyrð skipunin "gradle run", þá keyrir Gradle kerfið á Heroku vefþjónustunni, þar næst fer viðkomandi á netvafra og slær inn slóðina "localhost:4567".
-
+ - Til að keyra kerfið, er keyrð skipunin "gradle run", þá er hægt að fara á [heroku](https://dashboard.heroku.com/apps/safe-inlet-50535) og opna appið okkar.
