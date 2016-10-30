@@ -6,8 +6,9 @@ mainClassName = "is.ru.tictactoe.TicTacToeWeb"
 repositories {
     jcenter()
 }
+
 task stage {
-  dependsOn installDist
+  dependsOn  installDist
 }
 
 dependencies {
