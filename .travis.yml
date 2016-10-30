@@ -3,3 +3,8 @@ jdk:
 - oraclejdk8
 deploy:
   provider: heroku
+  api_key:
+    secure: e7I+zAIMrDW/cKFgoBvhHsmy0wuPYUj1phez4nZ7k0OfsplVfE0/JUrMIYeg3YpfsziLtHLeRvA0T98iN8MCHDeW+Ati5MUHvB8GgspbjFfZcI6JJ+C8BV/ixUYYu1Pk9k5dLItYhN5wTTCXRWlHi3761cxN7VmOOtVBxC9bLC18UWlqvaf8+QWg6wyFENLlplu2NkV/BeF9ECzwfwuGpqO3pnTYf48OY9Jed73LHznrv106gmGoO3P+i54ZIboGfUOyGsYNuMBIpdj7IfqjJO8RKpt+3CULRXumUGGbIXlaLmCltZkNA47dS7I9zul/cTK88rn4CvSKZono+MMXN4BLeEr2Qpc0+GXef03geci9qEyXEsQnHWVexIfrDdRD6TqzIvUxKvBc00cDIdypVtBvSREQiOeVUEeaZGXVSTYq7rNGVzbzbr8L81F/q74+KLt5W8Cm3rvMGGULLfZzzqJ53KC2NJbzUwN3Bgrs5kyXrxIrb20bK6/FNYQTZ9hYZndjhTj5d15P8SxfLht2KRV5pHPkqxHO1+rov49WBLwGsgPKTT+C1+DUBT3Py7PsSz9NL2hQUaQeW7q0OixwB6LxS1TgSXRvep0/IsM8oMx/5af+UbDj8lLNV8mMowv2KNlgn6I/mhopZkjPtcVw27lhLFe3QhgQqXKeUpGQx+g=
+  app: TicTacToe
+  on:
+    repo: PiedPiperInc/TicTacToe
