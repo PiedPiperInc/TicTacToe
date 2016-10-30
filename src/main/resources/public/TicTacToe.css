@@ -1,3 +1,7 @@
+/*
+the base for the css for the table was found at apple
+https://developer.apple.com/library/content/samplecode/TicTacToe/Listings/main_css.html#//apple_ref/doc/uid/DTS40010309-main_css-DontLinkElementID_4
+*/
 table {
   margin-left:auto; 
   margin-right:auto; 
@@ -22,13 +26,6 @@ h1 {
 }
 
 
-.Xcolor {
-  color:red;
-}
-
-.Ocolor {
-  color:green;
-}
 
 img {
   height: 170px;

@@ -1,12 +1,18 @@
-
+        //id of clicked spot, changes in functions
         var id;
+
+        //char of current player
         var player;
 
+
+        //gets the id of clicked spot in the TicTacToe table
         function myFunction(clicked_id) {
             id = clicked_id;
             $('#turnForm').submit();
         };
 
+
+        //function for when player wants to play again
         function anothaOne() {
                 for(i = 1; i <= 10; i++) {
                     $('#' + i).html('');
@@ -15,6 +21,9 @@
         }
 
 
+
+        //function that gets data from TicTacToe class
+        //after the game is over
         function gameOver(gameover) {
             if(gameover == 'true') {
                 $('#currentPlayer').html("Player X it's your turn");
@@ -49,7 +58,7 @@
         };
 
 
-
+        //gets data from the tictactoe class about the wins of each player and the draws
         function winners(wins) {
             var result = wins.split(" ");
             $('#Xwins').html(result[0] + " wins");
@@ -58,6 +67,9 @@
         };
 
 
+
+        //this is called with the turns function in tictactoe
+        //and puts the right symbol on the right spot in the table
         function turns() {
             if($('#' + id).val() != 'hannes' && $('#' + id).val() != 'kristo') {
                 if(player == 'X') { 
