@@ -3,9 +3,3 @@ jdk:
 - oraclejdk8
 deploy:
   provider: heroku
-  api_key:
-    secure: tPAVDBQDp0fx9mNenwoJr1qmlR9KuOvxCmLo7+T30wjKFamL01gDROo1G3iX2hYBo2GGt6aJQfJxrOXsQmvj8BZ0e9/LTO9mYHOadoKR5gD+CSkKhPqvDggMiVXG0Afw4yzCppUBYtnWdLw4bXW3xpL0ctkEfD7hI/MKuvalW/Q+m8Jn2EDtVoQldM9gaImBZfLxMh7Vyh3ECJTwHy8a3D9TWyJux1ErRBeLfF8hTl4gcKbqpywb/YaJBcKnnY2RAQtrxY32jgjvmT79yYwncu3IwBDJyOBdH+l/isPkPqwWn7JI7Ry6K3p3HlL4GqMOP+sGvmrh2GNy/PPqrMmj/wSp/K76oJaydS403A0KGDNumrD6mBI+m0x8rW3sulQ8oKjH+U2IBfoKkQAT5EpEAIAe2UqJWrUGKeuDbQg2TCdKhddVORfSEvDaIIlri8+B5o5YEYl9CW9XViaaVuTzhk2497OmYe6c9b2mIzWtBG7WgZXO0up18JF5J0xTdkFdnlRdU/1EilO2DGeBYt+5zTeKRxlr4ho2YzX+GpmhGeASM/rJ/F25QQHKMZbqYS4SZk8zQafrsB64k0dnT1VhBegQIUWAWpMnadQS9LXTNEWbQFRcCyrv9upubIxS+Pvj04cARsf1NjVAa00N2G3YSWHxRFMo9K6ikspSX5OaBQ0=
-  app: tranquil-castle-52150
-  on:
-    repo: PiedPiperInc/TicTacToe
-    branch: testBranch
