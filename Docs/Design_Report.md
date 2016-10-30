@@ -1,26 +1,30 @@
+# Design report
+##*Pied Piper Inc - TicTacToe*
 
-# Inngangur
-Verkefnið gengur út á að búa til Tic Tac Toe leik í java. Verkefnið snýst samt ekki bara um að forritaleikinn heldur að fylgja leiðbeiningum og ákveðnum ferlum sem við lærðum í áfanganum Hugbúnaðarfræði. Þetta er hönnunarskýrsla sem á að útskýra sýn okkar á verkefninu eins og við hugsum hana áður en við byrjum að forrita.
+## Introduction
+ The project is to build a Tic Tac Toe game coded in java and runs as a web application. The main focus of this project will also be using the right software development method.
+ 
+The application has two classes, *TicTacToe* and *Game*. This classes are listed below with it's functions.
 
+## Classes and functions
 
-#Klasar
 ###TicTacToe
-* __void play()__ - Aðalfallið í TicTacToe, keyrir leikinn sjálfan.
-* __char getInput()__ - Sækir inntak frá notanda, sendir það inn í game
-* __void displayBoard(char[][] board)__ - Birtir leikborðið frá Game.
+* __void play()__ - The main function in TicTacToe, runs the game.
+* __char getInput()__ - Request user input and returns it into Game.
+* __void displayBoard(char[][] board)__ - Display the game board.
 
 ###Game
-* __Char[][] board__ - Leikborðið sjálft
-* __Char player__ - Táknar leikmann, annað hvort ‘X’ eða ‘O’
-* __Boolean draw__ - Segir til um hvort það sé jafntefli eða ekki í lok leiks
-* __Void turn(char input)__ - Keyrir eina umferð af leiknum útfrá inntaki frá UI laginu.
-* __Char[][] getBoard()__ - Skilar leikborðinu svo UI lagið geti birt það
-* __Char getPlayer()__ - Skilar player svo UI lagið geti birt það.
-* __Boolean checkifInputIsValid()__ - Skoðar inntakið frá UI laginu og athugar hvort það sé innan réttra marka og hvort það sé X eða O þar fyrir.
-* __Boolean gameover(char[][] board)__ - Skoðar hvort leikurinn sé búinn. Skoðar fyrst hvort að það sé kominn sigurvegari og svo ef borðið er fullt og enginn sigurvegari finnst þá gefum við okkur að það sé komið draw.
+* __Char[][] board__ - The game board.
+* __Char player__ - Reprents player, either 'X" or 'O'.
+* __Boolean draw__ - Tells us whether there is a draw or not in the end of the game.
+* __Void turn(char input)__ - Runs one round of the game with input from the UI layer.
+* __Char[][] getBoard()__ - Returns the game board so the UI layer can display it.
+* __Char getPlayer()__ - Returns player function so the UI player can display it.
+* __Boolean checkifInputIsValid()__ - Read the input from UI layer and check whether it is within the right boundaries and whether the space is already taken by 'X' or 'O'.
+* __Boolean gameover(char[][] board)__ - Checks if the game is over. The function first checks if there is a winner and then whether the board is full. If there is no winner and the board is full we will get a draw. 
 
+## Layers
+* __UI__ - TicTacToe class is in the UI layer. It gets input from the user and displays the game board among other things on to the screen. The Play() function within the TicTacToe class starts the game by creating an instance of Game. Play function runs a loop while the game isn't over and runs one Game.Turn() function in each loop.
 
-#Lagskipting
-* __UI__ - TicTacToe klasinn er UI lagið hjá okkur, þ.e. Hann sér um að sækja input frá notanda og birta leikborðið ofl á skjáinn. Play() fallið hans sér um að byrja leikinn með því að búa til instance af Game. Play fallið keyrir lykkju á meðan leikurinn er ekki búinn og keyrir eitt Game.Turn() fall í hverri loopu.
-* __Business Logic__ - Game klasinn sér um alla business lógík hjá okkur. Hann sér í raun um leikinn sjálfan og er þá að vinna með inputið sem kemur frá TicTacToe klasanum og notar það til að setja inn X eða O á viðeigandi stað.
+* __Business Logic__ - The Game class handles all of the business logic. Furthermore it manages the game itself and is working with the input it gets from the TicTacToe class and uses it to put 'X's and 'O's into appropriate places.
 

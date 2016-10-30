@@ -5,7 +5,7 @@ deploy:
   provider: heroku
   api_key:
     secure: M6pETI5nKV4wR67/FEM+MyhIZz7GP9igz/8Q3BM7vo3IGBNu3u/2iqQe0fh3OIH41RLPK7AIAjtAjSOf72pdOEtm1Rx27f2pLOI2A4asiucKzryDfvYJdlqy2i2RUYExLPZWEAKbllQwgfyMHLaGnLQL2/YReXgui3XNS//qb6vOWeOCccUXATOKFBwxLrFTp4Ouy9RpqSgfvuSQ3hHJa25TWFd6FO6gevGZmJqWVnP4lb0/CGfL2ClinVwWUDDUZ+Ll1A/GmsTBV0lx1M4u92oNd8zc9ffpYMVkAGLLUm9x7t60oWilZ/ufTBAD0mLTyHdAG0KPItEeN3DdF36AW2NYZlmXSU7pKVTsrU3h18fbuUQTwWdz8XGT97asfRT3cYpfdniSzxqsvsqjPd7mwN1Trs7fgxr+gjzBkWo/is3tU6SI4CLuABdovv72KNx3nazY9XD/VFDuAPl9E5mybW2u6IjrgBP68OiSVXWh4mPgzgnQ6Msuyk/LRqKUdqZ/v2CJB5gv/7QwoMQpdVPXMRYg+llfWtQjw/xROWSjvg8jC2mUmqEwuycinuUNmJouYqOBKDm/OnQyRhfFWqOyUEUqBf8oTvKypGnQIOsMaOQYOM+pEnnJa7ZCF137GhcLznYg2RM767BxwnCTPUvvY8JbaiN507PA6rDnzFyqT9o=
-  app: detroitbadboys-1337 
+  app: detroitbadboys-3000 
   on:
     repo: PiedPiperInc/TicTacToe
   after_success:
