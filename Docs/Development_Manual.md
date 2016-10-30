@@ -24,7 +24,7 @@ We created a branch called feature for our first feature, the console app, and a
 Our main code, i.e. the java files are at */src/main/java/is/ru/tictactoe/*. The tests use the same path structure but with *test* instead of *main*. The files for the web, .html, .css and .js, are at *src/main/resources/*.
 
 ### Running the game
-To test and run your app locally first use *gradle build* and then *gradle run*. If all works the run should stop at 75% and you can find the program at *localhost:4567
+To test and run your app locally first use *gradle build* and then *gradle run*. If all works the run should stop at 75% and you can find the program at *localhost:4567*
 
 
 ### Commit the changes
