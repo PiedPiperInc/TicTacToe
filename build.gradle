@@ -8,7 +8,7 @@ repositories {
 }
 
 task stage {
-  dependsOn  installDist
+  dependsOn clean , installDist
 }
 
 dependencies {

@@ -59,6 +59,8 @@ public class Game {
            return thePlayer;
 		}
 
+
+		//returns the board
 		public char[][] getBoard() {
 			return board;
 		}
