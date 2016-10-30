@@ -1,3 +1,22 @@
+# Pied Piper Inc - TicTacToe - Administration manual
+ 
+### How to deploy on your local machine:
+ 
+####Clone the repository from github
+ *git clone https://github.com/PiedPiperInc/TicTacToe.git*
+  
+####Navigate to folder
+  *cd TicTacToe*
+  
+####Build the project
+  *gradle build*
+  
+####Navigate to folder
+  */TicTacToe/build/install/TicTacToe/bin*
+
+####Run the project
+  *./TicTacToe*
+
 # Administration manual
 
 ## Að install'a og setja upp kerfið
