@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="is.ru.tictactoe.TicTacToeTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2016-10-30T17:22:19" hostname="Axels-MBP" time="0.077">
+<testsuite name="is.ru.tictactoe.TicTacToeTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2016-11-02T17:26:17" hostname="Axels-MacBook-Pro.local" time="0.127">
   <properties/>
-  <testcase name="testWinnerHorizontalTop" classname="is.ru.tictactoe.TicTacToeTest" time="0.058"/>
-  <testcase name="testWinnerDiagonalDown" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
-  <testcase name="TestCharInput" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
+  <testcase name="testWinnerHorizontalTop" classname="is.ru.tictactoe.TicTacToeTest" time="0.075"/>
+  <testcase name="testWinnerDiagonalDown" classname="is.ru.tictactoe.TicTacToeTest" time="0.002"/>
+  <testcase name="TestCharInput" classname="is.ru.tictactoe.TicTacToeTest" time="0.004"/>
   <testcase name="testInitializeBoard" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
-  <testcase name="testWinnerVerticalLeft" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
-  <testcase name="TestLargeInput" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
-  <testcase name="testAlreadyTakenSpot" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
-  <testcase name="TestInput" classname="is.ru.tictactoe.TicTacToeTest" time="0.0"/>
-  <testcase name="testCorrectAnswerInTurn" classname="is.ru.tictactoe.TicTacToeTest" time="0.0"/>
+  <testcase name="testWinnerVerticalLeft" classname="is.ru.tictactoe.TicTacToeTest" time="0.002"/>
+  <testcase name="TestLargeInput" classname="is.ru.tictactoe.TicTacToeTest" time="0.002"/>
+  <testcase name="testAlreadyTakenSpot" classname="is.ru.tictactoe.TicTacToeTest" time="0.002"/>
+  <testcase name="TestInput" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
+  <testcase name="testCorrectAnswerInTurn" classname="is.ru.tictactoe.TicTacToeTest" time="0.002"/>
   <testcase name="testIfPlayerIsO" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
   <testcase name="testIfDraw" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
   <testcase name="testWinnerVerticalRight" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
   <testcase name="testWinnerHorizontalBottom" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
-  <testcase name="testWinnerVerticalMiddle" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
+  <testcase name="testWinnerVerticalMiddle" classname="is.ru.tictactoe.TicTacToeTest" time="0.002"/>
   <testcase name="testWrongInputPlayer" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
-  <testcase name="testIfWinner" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
-  <testcase name="testWinnerDiagonalUp" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
-  <testcase name="testWinnerHorizontalMiddle" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
+  <testcase name="testIfWinner" classname="is.ru.tictactoe.TicTacToeTest" time="0.002"/>
+  <testcase name="testWinnerDiagonalUp" classname="is.ru.tictactoe.TicTacToeTest" time="0.002"/>
+  <testcase name="testWinnerHorizontalMiddle" classname="is.ru.tictactoe.TicTacToeTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
